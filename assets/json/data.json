@@ -1,0 +1,169 @@
+{
+  "profile": {
+    "name": "Theresa Tutinas",
+    "title": "Web Developer Student",
+    "image": "assets/images/picture.jpg",
+    "bio": "I am currently studying web-development, demonstrating a proactive approach to mastering the field. I am seeking internship opportunities to gain hands-on experience. I bring a foundational skill set in CSS, HTML and Javascript, and am committed to expanding my expertise with the latest web technologies and industry practices."
+  },
+  "interest": [
+    {
+      "name": "Watching TV",
+      "img": "./assets/images/TV.webp"
+    },
+    {
+      "name": "Travelling",
+      "img": "./assets/images/travel.png"
+    },
+    {
+      "name": "Collecting Plants",
+      "img": "./assets/images/Monstera.webp"
+    },
+    {
+      "name": "Kayak",
+      "img": "./assets/images/kayak.png"
+    },
+    {
+      "name": "Painting",
+      "img": "./assets/images/painting.webp"
+    },
+    {
+      "name": "Reading Book",
+      "img": "./assets/images/reading.png"
+    },
+    {
+      "name": "Puzzle Solving",
+      "img": "./assets/images/puzzle.png"
+    }
+  ],
+  "softwareSkills": [
+    {
+      "name": "Illustrator",
+      "img": "./assets/images/illustrator.png"
+    },
+    {
+      "name": "Photoshop",
+      "img": "./assets/images/photoshop.webp"
+    },
+    {
+      "name": "inDesign",
+      "img": "./assets/images/indesign.webp"
+    },
+    {
+      "name": "Premiere",
+      "img": "./assets/images/file-premiere-64.webp"
+    },
+    {
+      "name": "After Effects",
+      "img": "./assets/images/After_Effects-64.webp"
+    },
+    {
+      "name": "Flash",
+      "img": "./assets/images/flash_format1_icon.png"
+    }
+  ],
+  "abilities": [
+    "I am a good team player and I can work well with others.",
+    "I have the ability to learn new things quickly.",
+    "Delivering results beyod expectations",
+    "Skilled at teamwork and building positive relationship,enhancing team collabortaion and project success.",
+    "Bilingual in Danish and English"
+  ],
+  "learningExperience": {
+    "education": [
+      {
+        "recent_education": "Web Developer- Hovedforløb",
+        "recent_school": "Viden Djurs Grenå",
+        "recent_school_address": "Ydesvej 4, Grenå",
+        "recent_school_year": "August 2023- October 2024"
+      },
+      {
+        "current_education": "Web Developer- Grundforløb",
+        "school_name": "Aarhus Tech",
+        "school_address": "Halmstadgade 6, 8200 Aarhus N",
+        "school_year_attended": "January 2023-July 2023"
+      },
+      {
+        "degree": "Bachelor of Science in Nursing",
+        "universityName": "University of the Cordilleras, Philippines",
+        "yearsAttended": "2004 - 2009",
+        "courses": [
+          "Medical-Surgical Nursing",
+          "Pediatric Nursing",
+          "Community Health Nursing",
+          "Operating Room Nursing",
+          "Surgical Room Nursing"
+        ]
+      },
+      {
+        "certificate": "Social og Sundheds Assistant",
+        "institutionName": "Sosu ØstJylland",
+        "location": "Denmark",
+        "yearsAttended": "2019 - 2021",
+        "courses": [
+          "Elderly Care Techniques",
+          "Psychological Support for the Elderly",
+          "Medication administration",
+          "Personal Care",
+          "Performing delegated treatments",
+          "Clinical nursing tasks",
+          "Conversations with Patient/Family",
+          "Coordination of citizen pathways"
+        ],
+        "details": "Gained practical experience in providing comprehensive care to the elderly, focusing on improving their quality of life and maintaining their independence."
+      },
+      {
+        "certificate": "Social og Sundheds Helper",
+        "institutionName": "Sosu ØstJylland",
+        "location": "Denmark",
+        "yearsAttended": "2021 - 2022",
+        "courses": [
+          "Elderly Care Techniques",
+          "Psychological Support for the Elderly",
+          "Medication administration",
+          "Personal Care",
+          "Performing delegated treatments",
+          "Clinical nursing tasks",
+          "Conversations with Patient/Family",
+          "Coordination of citizen pathways"
+        ],
+        "details": "Gained practical experience in providing comprehensive care to the elderly, focusing on improving their quality of life and maintaining their independence."
+      }
+    ]
+  },
+  "professionalExperience": {
+    "medicalTranscriptionist": {
+      "role": "Medical Transcriptionist",
+      "company": "Health Services Philippines",
+      "yearsWorked": "2009",
+      "responsibilities": [
+        "Transcribing medical reports",
+        "Editing transcribed reports",
+        "Verifying medical terminology"
+      ]
+    }
+  },
+  "languages": [
+    {
+      "name": "Philippines_Language",
+      "img": "./assets/images/philippine.png"
+    },
+    {
+      "name": "American-Language",
+      "img": "./assets/images/america.png"
+    },
+    {
+      "name": "Philippines",
+      "img": "./assets/images/danmark.png"
+    }
+  ],
+  "footer": {
+    "contact": {
+      "address": " Beder, Denmark",
+      "telephone": "(45)52827957",
+      "email": "thereanupol@gmail.com",
+      "addressIcon": "./assets/images/map_icon.png",
+      "telephoneIcon": "./assets/images/telephone.png",
+      "emailIcon": "./assets/images/gmail.png"
+    }
+  }
+}

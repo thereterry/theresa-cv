@@ -1,0 +1,439 @@
+
+$base-spacing: 10px;
+$base-font-size: 16px;
+$primary-color: #f9c4c5;
+$highlight-color: #9a838c;
+$background-color: #f5bec4;
+
+$primary-font: 'Franklin Gothic Medium', sans-serif;
+$secondary-font: 'Aleo', sans-serif;
+
+
+
+* {
+  transition-property: color, background-color, transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  font-family: '$secondary-font';
+  line-height: 1.6;
+  color: #333;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: $base-font-size;
+  background-color: $primary-color;
+  font-family: $secondary-font;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//Container
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: $base-spacing * 3;
+}
+
+//Navigation Links
+
+.navigation-links {
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-bottom: 1px solid lighten($background-color, 15%);
+
+  button {
+    background-color: $background-color;
+    font-size: 1rem; // 16px
+    font-family: $primary-font;
+    border: 2px solid $highlight-color; 
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+    &:hover {
+      background-color: darken($background-color, 10%);
+      transform: translateY(-3px);
+    }
+  }
+}
+
+//PROFILE
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid $highlight-color;
+  }
+
+  &-name {
+    font-size: 2em; 
+    margin-bottom: 10px;
+    font-family: $secondary-font;
+    font-weight: 600;
+  }
+
+  &-bio {
+    text-align: center;
+    max-width: 80%;
+  }
+}
+
+.profile-title {
+    font-size: 1em;   
+    margin-bottom: 20px; 
+    color:$highlight-color;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+//Base style for Section
+
+.section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid $background-color;
+    padding-bottom: 10px;
+  }
+  &:hover {
+     transform: translateX(10px);
+    color: darken($background-color, 20%);
+    background-color: lighten($background-color, 5%);
+     }
+
+}
+
+.abilities-section {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+  h2 {
+    font-size: 1.8rem;
+    font-family: $secondary-font;
+    margin-bottom: 10px;
+    border-bottom: 2px solid $background-color;
+    padding-bottom: 10px;
+  }
+  &:hover {
+     transform: translateX(10px);
+    color: darken($background-color, 20%);
+    background-color: lighten($background-color, 5%);
+     }
+}
+
+.abilities-section {
+  @extend .section; 
+  background-color: lighten($background-color, 25%);
+ 
+  
+  @media only screen and (min-width: 1200px) {
+    padding-left: 10vh;
+  }
+}
+
+.learning-experience-section {
+  @extend .section; 
+  background-color: lighten($background-color, 30%);
+  
+  @media only screen and (min-width: 1200px) {
+    padding-left: $base-font-size * 6;
+    color:$highlight-color;
+    font-size: rem;
+    font-family: $secondary-font;
+  }
+}
+
+.languages-section {
+  @extend .section; 
+  background-color: lighten($background-color, 10%);
+
+  @media only screen and (min-width: 1200px) {
+    padding-left: 10vh;
+  }
+}
+
+
+//Software Skills Section
+
+.software-skills {
+  @extend .section; // Use base styles from .section
+  background-color: lighten($background-color, 25%);
+
+  @media only screen and (min-width: 1200px) {
+    padding-left: 10vh;
+  }
+}
+
+//Interest Section 
+.interest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: lighten($background-color, 10%);
+  padding: $base-spacing;
+  border-radius: $base-spacing;
+  text-align: center;
+  transition: transform .23 ease-in-out;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2 * $base-spacing;
+    color: darken($background-color, 35%);
+  }
+  
+  img {
+    max-width: 100%; 
+    border-radius: calc(#{$base-spacing} / 2);
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 15px 25px; 
+    background-color: lighten($background-color, 15%); 
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
+
+    p {
+      font-size: 1rem; 
+      margin-bottom: 5px;
+    }
+  }
+}
+
+
+.interest-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+//Menu 
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+.highlight {
+ color: $highlight-color;
+}
+
+.menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #007BFF;
+  }
+}
+
+//Responsive Styles
+@media only screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .menu a {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  h1 {
+    font-size: 2.3em;
+  }
+
+  h2 {
+    font-size: 1.85em;
+  }
+}
+
+//Larger Mobile Device
+@media only screen and (max-width: 600px) {
+  body {
+      font-size: 15px; 
+  }
+
+  h1 {
+      font-size: 2.2em;
+  }
+
+  h2 {
+      font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+ 
+  .someElementWithFixedHeight {
+      height: auto;
+  }
+
+  h1 {
+      font-size: 2.4em; 
+  }
+
+  h2 {
+      font-size: 1.9em;
+  }
+}
+
+//Splash
+
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: $background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader {
+    border: 12px solid #53005D;
+    border-top: 12px solid darken($background-color, 20%);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}
+
+
+.contact-address,
+.contact-phone,
+.contact-email {
+  padding: 10px 20px; 
+  background-color: lighten($background-color, 20%);
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    position: relative;
+    color: darken($background-color, 35%);
+    transition: all 0.3s ease;
+
+    &:before {
+      content: '\2022';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+      color: darken($background-color, 30%);
+    }
+
+    &:hover {
+      color: darken($background-color, 20%);
+      background-color: lighten($background-color, 5%);
+      transform: translateX(10px);
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    padding: 15px 25px; 
+    background-color: lighten($background-color, 15%); 
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
+
+    p {
+      font-size: 1rem; 
+      margin-bottom: 5px;
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    padding:20px 40px;
+
+    p {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    position: relative;
+    color: darken($background-color, 35%);
+    transition: all 0.3s ease;
+    
+    &:before {
+      content: '\2022';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+      color: darken($background-color, 30%);
+    }
+    
+    &:hover {
+      color: darken($background-color, 20%);
+      background-color: lighten($background-color, 5%);
+      transform: translateX(10px);
+    }
+  }
+}
+
+.education-list-item,
+.abilities-list-item,
+.professional-experience-item {
+  letter-spacing: 1px;
+  font-weight: 600; 
+  font-size: 16px; 
+  line-height: 1.6; 
+  margin-bottom: 15px;
+  padding: 10px; //
+  background-color: #f9f9f9; 
+  border-radius: 5px; 
+  color: #333;
+
+  
+}
